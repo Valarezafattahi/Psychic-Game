@@ -1,0 +1,36 @@
+/* body {
+    background-image: url("../images/bg2.jpg"), url("../images/bg3.jpg");    
+    background-repeat: no-repeat;
+    background-position-y: 200px, 200px;
+    background-position-x: 5%, 95%;
+    background-size: 350px;
+} */
+
+#title {
+    font-family: 'Creepster', cursive;
+    font-size: 5em;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-weight: 600;
+}
+
+
+
+footer {
+    font-family: 'creepster';
+    text-align: center;
+    letter-spacing: 2.2px;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    background-color: #563d7c;
+}
+
+.containerEmpty {
+    margin-top: 14.5%;
+}

@@ -17,7 +17,7 @@ window.onload = function() {
     console.log(computerGuess[0]);
     // so far so good
 }
-
+    // initiating the game 
 document.onkeyup = function (event) {
     var playerGuess = event.key;
     lettersGuessed.push(playerGuess);
@@ -29,8 +29,8 @@ if ((playerGuess === computerGuess[0]) && (guessesLeft > 0)) {
     computerGuess.length = 0;
     var pcGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     computerGuess.push(pcGuess);
-
 }
+
 else if ((playerGuess !== computerGuess[0]) && (guessesLeft > 0 )) {
     guessesLeft = guessesLeft-1;
 }
@@ -44,14 +44,15 @@ else {
     computerGuess.push(pcGuess);
 }
 
-var board = "<h2>Guess What Letter I'm Thinking Of,</h2>" +
-            "<p>Wins: " + wins + " </p>" +
-            "<p>Losses: " + losses + "</p>" +
-            "<p>Guesses left: " + guessesLeft + "</p>" +
-            "<p> You have guessed : " + lettersGuessed + "</p>";
+var board = "<h2 class='row justify-content-md-center'>Guess What Letter I'm Thinking Of,</h2>" +
+            "<p class='row justify-content-md-center'>Wins: " + wins + " </p>" +
+            "<p class='row justify-content-md-center'>Losses: " + losses + "</p>" +
+            "<p class='row justify-content-md-center'>Guesses left: " + guessesLeft + "</p>" +
+            "<p class='row justify-content-md-center'>You have guessed : " + lettersGuessed + "</p>";
+            "<div class='containerEmpty'></div>"
     document.querySelector("#board").innerHTML = board;
-
 }
+
 
 
 

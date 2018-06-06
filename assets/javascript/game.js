@@ -48,7 +48,7 @@ var board = "<h2>Guess What Letter I'm Thinking Of,</h2>" +
             "<p>Wins: " + wins + " </p>" +
             "<p>Losses: " + losses + "</p>" +
             "<p>Guesses left: " + guessesLeft + "</p>" +
-            "<p> Your guesses so far : " + lettersGuessed + "</p>";
+            "<p> You have guessed : " + lettersGuessed + "</p>";
     document.querySelector("#board").innerHTML = board;
 
 }
